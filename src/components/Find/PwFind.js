@@ -67,7 +67,7 @@ const PwFind = () => {
               <label>이메일</label>
               <input type="email" name="userEmail" placeholder="test@email.com" value={userEmail} onChange={onChange} required></input>
               <label>핸드폰번호</label>
-              <input type="text" name="userTel" placeholder="핸드폰번호를 입력해주세요" value={userTel} onChange={onChange} required />
+              <input maxLength={13} type="text" name="userTel" placeholder="핸드폰번호를 입력해주세요" value={userTel} onChange={onChange} required />
               <div className="FindButton">
                 <button type="button" onClick={register}>
                   찾기
